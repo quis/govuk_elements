@@ -32,6 +32,7 @@
         <li><a href="#typography-inset-text">Inset text</a></li>
         <li><a href="#typography-legal-text">Legal text</a></li>
         <li><a href="#typography-hidden-text">Hidden text (progressive disclosure)</a></li>
+        <li><a href="#typography-class">Use styling automatically</a></li>
         <li><a href="#examples">Examples</a></li>
       </ul>
     </div>
@@ -212,6 +213,23 @@
       <a href="/typography/example-details-summary/">Take a look at example page</a> which demonstrates conditionally revealing information, using the HTML5 details and summary elements.
     </p>
   </div>
+
+
+  <h3 class="heading-medium" id="typography-class">Use styling automatically</h3>
+  <div class="text">
+    <p>You can use the <code class="code">govuk-prose</code> class around a body of prose. Then certain elements inside will be styled automatically without the need to add specific classes to each of them.</p>
+    <p>That will apply to most typographic elements: headings, lists, links (without govuk_template), code and strong. Tables, paragraphs, links (with govuk_template) and horizontal rules are already always styled without that class.</p>
+  </div>
+
+<div class="example">
+  {% include "snippets/typography_class.html" %}
+</div>
+
+<pre>
+<code class="language-markup">
+  {% filter escape %}{% include "snippets/typography_class.html" %}{% endfilter %}
+</code>
+</pre>
 
 
   <h3 class="heading-medium" id="examples">Examples</h3>
